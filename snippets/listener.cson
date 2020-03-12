@@ -1,0 +1,18 @@
+'.php':
+  'Splint CodeIgniter Listener class':
+    'prefix': 'spl-lis'
+    'body': """
+    <?php
+    defined('BASEPATH') OR exit('No direct script access allowed');
+
+    class ${1:Controller_name} extends AppEventListener
+    {
+
+      public function getData(?string $previousListener)
+      {
+        return null;
+      }
+
+      public function handle($event):void
+      {}
+    """

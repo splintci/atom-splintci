@@ -1,0 +1,11 @@
+'.php':
+  'Splint CodeIgniter PHP Class':
+    'prefix': 'spl-lib'
+    'description': 'A Splint Class (Regular PHP class)'
+    'body': """
+    <?php
+    defined('BASEPATH') OR exit('No direct script access allowed');
+
+    class ${1:ClassName}
+    {}
+    """

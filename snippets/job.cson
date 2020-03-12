@@ -1,0 +1,16 @@
+'.php':
+  'Splint Platform Job':
+    'prefix': 'spl-job'
+    'description': 'A Splint Platform Job Class'
+    'body': """
+    <?php
+    defined('BASEPATH') OR exit('No direct script access allowed');
+
+    class ${1:JobName} extends AsyncJob
+    {
+      public function execute():int
+      {
+        return 0;
+      }
+    }
+    """
